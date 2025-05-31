@@ -6,20 +6,18 @@
 ////////////////////////////////////////////
 //
 #include "../inc/champsim_crc2.h"
-#include <cstdlib>
 
-#define NUM_CORE 4
+#define NUM_CORE 1
 #define LLC_SETS NUM_CORE*2048
 #define LLC_WAYS 16
 
-#define maxRRPV 7
+#define maxRRPV 3
 uint32_t rrpv[LLC_SETS][LLC_WAYS];
 
 // initialize replacement state
 void InitReplacementState()
 {
     cout << "Initialize SRRIP state" << endl;
-    std::srand(0);
 
     for (int i=0; i<LLC_SETS; i++) {
         for (int j=0; j<LLC_WAYS; j++) {
@@ -40,7 +38,8 @@ uint32_t GetVictimInSet (uint32_t cpu, uint32_t set, const BLOCK *current_set, u
                 return i;
 
         for (int i=0; i<LLC_WAYS; i++)
-            rrpv[set][i]++;
+            if (rrpv[set][i] < maxRRPV)
+                rrpv[set][i]++;
     }
 
     // WE SHOULD NOT REACH HERE
@@ -53,10 +52,8 @@ void UpdateReplacementState (uint32_t cpu, uint32_t set, uint32_t way, uint64_t 
 {
     if (hit)
         rrpv[set][way] = 0;
-    else if (std::rand() % 100 + 1 < 2)
-        rrpv[set][way] = 4;
     else
-        rrpv[set][way] = maxRRPV-1;
+        rrpv[set][way] = (rand() % 100 <= 3) ? 1 : 0; // 2-bit srrip gives 0.466523
 }
 
 // use this function to print out your own stats on every heartbeat 

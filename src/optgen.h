@@ -7,7 +7,7 @@ using namespace std;
 #include <math.h>
 #include <set>
 #include <vector>
-#define OPTGEN_VECTOR_SIZE 256
+#define OPTGEN_VECTOR_SIZE 128
 
 struct ADDR_INFO
 {

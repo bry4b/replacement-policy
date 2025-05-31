@@ -21,8 +21,8 @@ uint32_t rrip[LLC_SETS][LLC_WAYS];
 //Hawkeye predictors for demand and prefetch requests
 Hawkeye_Predictor* predictor_demand;    //2K entries, 5-bit counter per each entry
 
-#define OPTGEN_VECTOR_SIZE 256
-OPTgen set_optgen[LLC_SETS];   //64 vecotrs, 128 entries each
+#define OPTGEN_VECTOR_SIZE 128
+OPTgen set_optgen[LLC_SETS];   //2048 vecotrs, 128 entries each
 
 std::vector<std::map<uint64_t, ADDR_INFO>> addr_history; // sampler indexed by pAddr % NSETS
 uint64_t sample_signature[LLC_SETS][LLC_WAYS];
@@ -43,11 +43,15 @@ void InitReplacementState()
     cout << "Initialize Hawkeye replacement policy state" << endl;
 
     for (int i=0; i<LLC_SETS; i++) {
+        for (int j=0; j<LLC_WAYS; j++) {
+            rrip[i][j] = 0; // Initialize RRIP counters to 0
+            sample_signature[i][j] = 0; // Initialize sample signatures to 0
+        }
         set_timer[i] = 0;
         set_optgen[i].init(LLC_WAYS - 2); // WAYS - 2
-        addr_history[i].clear();
     }
 
+    addr_history.resize(LLC_SETS);
     predictor_demand = new Hawkeye_Predictor();
 
     cout << "Finished initializing Hawkeye replacement policy state" << endl;
@@ -60,6 +64,7 @@ uint32_t GetVictimInSet (uint32_t cpu, uint32_t set, const BLOCK *current_set, u
     //Find the line with RRPV of 7 in that set
     for(uint32_t i = 0; i < LLC_WAYS; i++){
         if(rrip[set][i] == MAXRRIP){
+            predictor_demand->decrease(sample_signature[set][i]);
             return i;
         }
     }

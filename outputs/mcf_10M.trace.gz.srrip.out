@@ -11,16 +11,16 @@ Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/mcf_10M.trace.gz
 Initialize SRRIP state
-Heartbeat CPU 0 instructions: 1000003 cycles: 495784 heartbeat IPC: 2.01701 cumulative IPC: 2.01701 (Simulation time: 0 hr 0 min 1 sec) 
+Heartbeat CPU 0 instructions: 1000003 cycles: 495784 heartbeat IPC: 2.01701 cumulative IPC: 2.01701 (Simulation time: 0 hr 0 min 2 sec) 
 
-Warmup complete CPU 0 instructions: 1000003 cycles: 495784 (Simulation time: 0 hr 0 min 1 sec) 
+Warmup complete CPU 0 instructions: 1000003 cycles: 495784 (Simulation time: 0 hr 0 min 2 sec) 
 
-Heartbeat CPU 0 instructions: 2000002 cycles: 14282823 heartbeat IPC: 0.0725318 cumulative IPC: 0.0725318 (Simulation time: 0 hr 0 min 4 sec) 
+Heartbeat CPU 0 instructions: 2000002 cycles: 14282823 heartbeat IPC: 0.0725318 cumulative IPC: 0.0725318 (Simulation time: 0 hr 0 min 5 sec) 
 Heartbeat CPU 0 instructions: 3000000 cycles: 20723934 heartbeat IPC: 0.155252 cumulative IPC: 0.098872 (Simulation time: 0 hr 0 min 7 sec) 
-Heartbeat CPU 0 instructions: 4000000 cycles: 27099331 heartbeat IPC: 0.156853 cumulative IPC: 0.112767 (Simulation time: 0 hr 0 min 9 sec) 
-Heartbeat CPU 0 instructions: 5000001 cycles: 44582771 heartbeat IPC: 0.057197 cumulative IPC: 0.0907297 (Simulation time: 0 hr 0 min 12 sec) 
-Heartbeat CPU 0 instructions: 6000002 cycles: 51512020 heartbeat IPC: 0.144316 cumulative IPC: 0.098008 (Simulation time: 0 hr 0 min 15 sec) 
-Heartbeat CPU 0 instructions: 7000000 cycles: 57631804 heartbeat IPC: 0.163404 cumulative IPC: 0.105013 (Simulation time: 0 hr 0 min 17 sec) 
+Heartbeat CPU 0 instructions: 4000000 cycles: 27099331 heartbeat IPC: 0.156853 cumulative IPC: 0.112767 (Simulation time: 0 hr 0 min 10 sec) 
+Heartbeat CPU 0 instructions: 5000001 cycles: 44582771 heartbeat IPC: 0.057197 cumulative IPC: 0.0907297 (Simulation time: 0 hr 0 min 13 sec) 
+Heartbeat CPU 0 instructions: 6000002 cycles: 51512020 heartbeat IPC: 0.144316 cumulative IPC: 0.098008 (Simulation time: 0 hr 0 min 16 sec) 
+Heartbeat CPU 0 instructions: 7000000 cycles: 57631804 heartbeat IPC: 0.163404 cumulative IPC: 0.105013 (Simulation time: 0 hr 0 min 18 sec) 
 Heartbeat CPU 0 instructions: 8000000 cycles: 68054550 heartbeat IPC: 0.095944 cumulative IPC: 0.103613 (Simulation time: 0 hr 0 min 19 sec) 
 Heartbeat CPU 0 instructions: 9000002 cycles: 81558479 heartbeat IPC: 0.0740527 cumulative IPC: 0.098689 (Simulation time: 0 hr 0 min 23 sec) 
 *** Reached end of trace for Core: 0 Repeating trace: ./trace/mcf_10M.trace.gz

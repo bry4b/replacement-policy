@@ -10,22 +10,33 @@ LLC ways: 16
 Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/graph_analytics_10M.trace.gz
-Initialize LRU replacement state
-Heartbeat CPU 0 instructions: 1000002 cycles: 547201 heartbeat IPC: 1.82749 cumulative IPC: 1.82749 (Simulation time: 0 hr 0 min 1 sec) 
+Initialize DIP replacement state
+Heartbeat CPU 0 instructions: 1000002 cycles: 547201 heartbeat IPC: 1.82749 cumulative IPC: 1.82749 (Simulation time: 0 hr 0 min 2 sec) 
+Current PSEL: 511
 
-Warmup complete CPU 0 instructions: 1000002 cycles: 547201 (Simulation time: 0 hr 0 min 1 sec) 
+Warmup complete CPU 0 instructions: 1000002 cycles: 547201 (Simulation time: 0 hr 0 min 2 sec) 
 
-Heartbeat CPU 0 instructions: 2000001 cycles: 2713939 heartbeat IPC: 0.461523 cumulative IPC: 0.461523 (Simulation time: 0 hr 0 min 3 sec) 
+Heartbeat CPU 0 instructions: 2000001 cycles: 2713939 heartbeat IPC: 0.461523 cumulative IPC: 0.461523 (Simulation time: 0 hr 0 min 4 sec) 
+Current PSEL: 511
 Heartbeat CPU 0 instructions: 3000002 cycles: 7718968 heartbeat IPC: 0.199799 cumulative IPC: 0.278871 (Simulation time: 0 hr 0 min 6 sec) 
+Current PSEL: 531
 Heartbeat CPU 0 instructions: 4000000 cycles: 12767187 heartbeat IPC: 0.198089 cumulative IPC: 0.245499 (Simulation time: 0 hr 0 min 9 sec) 
+Current PSEL: 534
 Heartbeat CPU 0 instructions: 5000000 cycles: 18026930 heartbeat IPC: 0.190123 cumulative IPC: 0.228836 (Simulation time: 0 hr 0 min 11 sec) 
+Current PSEL: 549
 Heartbeat CPU 0 instructions: 6000001 cycles: 22889465 heartbeat IPC: 0.205654 cumulative IPC: 0.223791 (Simulation time: 0 hr 0 min 14 sec) 
+Current PSEL: 535
 Heartbeat CPU 0 instructions: 7000001 cycles: 27981149 heartbeat IPC: 0.196399 cumulative IPC: 0.218707 (Simulation time: 0 hr 0 min 16 sec) 
+Current PSEL: 520
 Heartbeat CPU 0 instructions: 8000000 cycles: 33160255 heartbeat IPC: 0.193083 cumulative IPC: 0.214638 (Simulation time: 0 hr 0 min 19 sec) 
+Current PSEL: 525
 Heartbeat CPU 0 instructions: 9000002 cycles: 38025176 heartbeat IPC: 0.205554 cumulative IPC: 0.213459 (Simulation time: 0 hr 0 min 21 sec) 
+Current PSEL: 497
 *** Reached end of trace for Core: 0 Repeating trace: ./trace/graph_analytics_10M.trace.gz
 Heartbeat CPU 0 instructions: 10000003 cycles: 42827331 heartbeat IPC: 0.20824 cumulative IPC: 0.212866 (Simulation time: 0 hr 0 min 24 sec) 
+Current PSEL: 505
 Heartbeat CPU 0 instructions: 11000002 cycles: 44876850 heartbeat IPC: 0.487919 cumulative IPC: 0.225583 (Simulation time: 0 hr 0 min 26 sec) 
+Current PSEL: 506
 Finished CPU 0 instructions: 10000000 cycles: 44329649 cummulative IPC: 0.225583 (Simulation time: 0 hr 0 min 26 sec) 
 
 ChampSim completed all CPUs
@@ -38,3 +49,4 @@ LLC LOAD      ACCESS:     103877  HIT:       9924  MISS:      93953
 LLC RFO       ACCESS:        969  HIT:         92  MISS:        877
 LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 LLC WRITEBACK ACCESS:      37702  HIT:      37658  MISS:         44
+Final PSEL: 506

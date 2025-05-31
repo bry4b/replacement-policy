@@ -1,0 +1,52 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 1000000
+Simulation Instructions: 10000000
+Configuration: 1
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
+
+CPU 0 runs ./trace/bzip2_10M.trace.gz
+Initialize DRRIP replacement state
+Heartbeat CPU 0 instructions: 1000002 cycles: 454321 heartbeat IPC: 2.20109 cumulative IPC: 2.20109 (Simulation time: 0 hr 0 min 2 sec) 
+PSEL counter: 501
+
+Warmup complete CPU 0 instructions: 1000002 cycles: 454321 (Simulation time: 0 hr 0 min 2 sec) 
+
+Heartbeat CPU 0 instructions: 2000001 cycles: 2190433 heartbeat IPC: 0.575999 cumulative IPC: 0.575999 (Simulation time: 0 hr 0 min 5 sec) 
+PSEL counter: 506
+Heartbeat CPU 0 instructions: 3000002 cycles: 3973713 heartbeat IPC: 0.560765 cumulative IPC: 0.56828 (Simulation time: 0 hr 0 min 7 sec) 
+PSEL counter: 534
+Heartbeat CPU 0 instructions: 4000000 cycles: 5255418 heartbeat IPC: 0.780209 cumulative IPC: 0.624857 (Simulation time: 0 hr 0 min 9 sec) 
+PSEL counter: 562
+Heartbeat CPU 0 instructions: 5000002 cycles: 6384279 heartbeat IPC: 0.88585 cumulative IPC: 0.674541 (Simulation time: 0 hr 0 min 12 sec) 
+PSEL counter: 610
+Heartbeat CPU 0 instructions: 6000002 cycles: 7339163 heartbeat IPC: 1.04725 cumulative IPC: 0.726233 (Simulation time: 0 hr 0 min 14 sec) 
+PSEL counter: 642
+Heartbeat CPU 0 instructions: 7000000 cycles: 8191643 heartbeat IPC: 1.17305 cumulative IPC: 0.775462 (Simulation time: 0 hr 0 min 17 sec) 
+PSEL counter: 641
+Heartbeat CPU 0 instructions: 8000000 cycles: 9607561 heartbeat IPC: 0.706256 cumulative IPC: 0.764756 (Simulation time: 0 hr 0 min 19 sec) 
+PSEL counter: 703
+Heartbeat CPU 0 instructions: 9000002 cycles: 10947109 heartbeat IPC: 0.746522 cumulative IPC: 0.762428 (Simulation time: 0 hr 0 min 21 sec) 
+PSEL counter: 691
+*** Reached end of trace for Core: 0 Repeating trace: ./trace/bzip2_10M.trace.gz
+Heartbeat CPU 0 instructions: 10000001 cycles: 12524102 heartbeat IPC: 0.634118 cumulative IPC: 0.745664 (Simulation time: 0 hr 0 min 23 sec) 
+PSEL counter: 761
+Heartbeat CPU 0 instructions: 11000002 cycles: 13927127 heartbeat IPC: 0.712746 cumulative IPC: 0.742236 (Simulation time: 0 hr 0 min 26 sec) 
+PSEL counter: 739
+Finished CPU 0 instructions: 10000000 cycles: 13472806 cummulative IPC: 0.742236 (Simulation time: 0 hr 0 min 26 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cummulative IPC: 0.742236 instructions: 10000000 cycles: 13472806
+LLC TOTAL     ACCESS:     104771  HIT:      84160  MISS:      20611
+LLC LOAD      ACCESS:      66109  HIT:      56124  MISS:       9985
+LLC RFO       ACCESS:      16745  HIT:       6433  MISS:      10312
+LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+LLC WRITEBACK ACCESS:      21917  HIT:      21603  MISS:        314
+Final PSEL value: 739

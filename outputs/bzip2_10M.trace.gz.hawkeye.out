@@ -11,3 +11,67 @@ Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/bzip2_10M.trace.gz
 Initialize Hawkeye replacement policy state
+Finished initializing Hawkeye replacement policy state
+Heartbeat CPU 0 instructions: 1000002 cycles: 454321 heartbeat IPC: 2.20109 cumulative IPC: 2.20109 (Simulation time: 0 hr 0 min 1 sec) 
+OPTGen Hits: 3156
+OPTGen Access: 3953
+OPTGEN Hit Rate: 79.8381
+
+Warmup complete CPU 0 instructions: 1000002 cycles: 454321 (Simulation time: 0 hr 0 min 1 sec) 
+
+Heartbeat CPU 0 instructions: 2000001 cycles: 2190053 heartbeat IPC: 0.576125 cumulative IPC: 0.576125 (Simulation time: 0 hr 0 min 3 sec) 
+OPTGen Hits: 5235
+OPTGen Access: 7049
+OPTGEN Hit Rate: 74.2659
+Heartbeat CPU 0 instructions: 3000002 cycles: 3968175 heartbeat IPC: 0.562392 cumulative IPC: 0.569176 (Simulation time: 0 hr 0 min 4 sec) 
+OPTGen Hits: 11501
+OPTGen Access: 19924
+OPTGEN Hit Rate: 57.7244
+Heartbeat CPU 0 instructions: 4000000 cycles: 5249240 heartbeat IPC: 0.780599 cumulative IPC: 0.625662 (Simulation time: 0 hr 0 min 6 sec) 
+OPTGen Hits: 16917
+OPTGen Access: 31869
+OPTGEN Hit Rate: 53.0829
+Heartbeat CPU 0 instructions: 5000002 cycles: 6370510 heartbeat IPC: 0.891848 cumulative IPC: 0.676111 (Simulation time: 0 hr 0 min 7 sec) 
+OPTGen Hits: 38709
+OPTGen Access: 58721
+OPTGEN Hit Rate: 65.9202
+Heartbeat CPU 0 instructions: 6000002 cycles: 7325634 heartbeat IPC: 1.04698 cumulative IPC: 0.727663 (Simulation time: 0 hr 0 min 9 sec) 
+OPTGen Hits: 48030
+OPTGen Access: 68790
+OPTGEN Hit Rate: 69.8212
+Heartbeat CPU 0 instructions: 7000000 cycles: 8177917 heartbeat IPC: 1.17332 cumulative IPC: 0.77684 (Simulation time: 0 hr 0 min 10 sec) 
+OPTGen Hits: 48589
+OPTGen Access: 69824
+OPTGEN Hit Rate: 69.5878
+Heartbeat CPU 0 instructions: 8000000 cycles: 9591975 heartbeat IPC: 0.707185 cumulative IPC: 0.766061 (Simulation time: 0 hr 0 min 11 sec) 
+OPTGen Hits: 55906
+OPTGen Access: 78256
+OPTGEN Hit Rate: 71.4399
+Heartbeat CPU 0 instructions: 9000002 cycles: 10930740 heartbeat IPC: 0.746959 cumulative IPC: 0.76362 (Simulation time: 0 hr 0 min 13 sec) 
+OPTGen Hits: 56641
+OPTGen Access: 79787
+OPTGEN Hit Rate: 70.9903
+*** Reached end of trace for Core: 0 Repeating trace: ./trace/bzip2_10M.trace.gz
+Heartbeat CPU 0 instructions: 10000001 cycles: 12507783 heartbeat IPC: 0.634097 cumulative IPC: 0.746673 (Simulation time: 0 hr 0 min 14 sec) 
+OPTGen Hits: 59907
+OPTGen Access: 83607
+OPTGEN Hit Rate: 71.6531
+Heartbeat CPU 0 instructions: 11000002 cycles: 13910640 heartbeat IPC: 0.712832 cumulative IPC: 0.743145 (Simulation time: 0 hr 0 min 15 sec) 
+OPTGen Hits: 62394
+OPTGen Access: 86807
+OPTGEN Hit Rate: 71.8767
+Finished CPU 0 instructions: 10000000 cycles: 13456319 cummulative IPC: 0.743145 (Simulation time: 0 hr 0 min 15 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cummulative IPC: 0.743145 instructions: 10000000 cycles: 13456319
+LLC TOTAL     ACCESS:     104771  HIT:      84661  MISS:      20110
+LLC LOAD      ACCESS:      66109  HIT:      56305  MISS:       9804
+LLC RFO       ACCESS:      16745  HIT:       6446  MISS:      10299
+LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+LLC WRITEBACK ACCESS:      21917  HIT:      21910  MISS:          7
+Final OPTGen Hits: 62394
+Final OPTGen Access: 86807
+Final OPTGEN Hit Rate: 71.8767

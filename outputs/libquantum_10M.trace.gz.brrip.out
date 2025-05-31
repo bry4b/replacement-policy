@@ -11,30 +11,30 @@ Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/libquantum_10M.trace.gz
 Initialize SRRIP state
-Heartbeat CPU 0 instructions: 1000000 cycles: 420326 heartbeat IPC: 2.37911 cumulative IPC: 2.37911 (Simulation time: 0 hr 0 min 1 sec) 
+Heartbeat CPU 0 instructions: 1000000 cycles: 420326 heartbeat IPC: 2.37911 cumulative IPC: 2.37911 (Simulation time: 0 hr 0 min 0 sec) 
 
-Warmup complete CPU 0 instructions: 1000001 cycles: 420327 (Simulation time: 0 hr 0 min 1 sec) 
+Warmup complete CPU 0 instructions: 1000001 cycles: 420327 (Simulation time: 0 hr 0 min 0 sec) 
 
-Heartbeat CPU 0 instructions: 2000001 cycles: 3380045 heartbeat IPC: 0.33787 cumulative IPC: 0.33787 (Simulation time: 0 hr 0 min 3 sec) 
-Heartbeat CPU 0 instructions: 3000001 cycles: 6356709 heartbeat IPC: 0.335947 cumulative IPC: 0.336906 (Simulation time: 0 hr 0 min 5 sec) 
-Heartbeat CPU 0 instructions: 4000000 cycles: 9375043 heartbeat IPC: 0.331308 cumulative IPC: 0.335019 (Simulation time: 0 hr 0 min 9 sec) 
-Heartbeat CPU 0 instructions: 5000001 cycles: 12415542 heartbeat IPC: 0.328894 cumulative IPC: 0.333466 (Simulation time: 0 hr 0 min 11 sec) 
-Heartbeat CPU 0 instructions: 6000001 cycles: 15481704 heartbeat IPC: 0.326141 cumulative IPC: 0.331975 (Simulation time: 0 hr 0 min 13 sec) 
-Heartbeat CPU 0 instructions: 7000000 cycles: 18455103 heartbeat IPC: 0.336315 cumulative IPC: 0.332691 (Simulation time: 0 hr 0 min 15 sec) 
-Heartbeat CPU 0 instructions: 8000000 cycles: 20911108 heartbeat IPC: 0.407165 cumulative IPC: 0.341617 (Simulation time: 0 hr 0 min 17 sec) 
-Heartbeat CPU 0 instructions: 9000001 cycles: 23249364 heartbeat IPC: 0.42767 cumulative IPC: 0.350431 (Simulation time: 0 hr 0 min 18 sec) 
+Heartbeat CPU 0 instructions: 2000001 cycles: 3330839 heartbeat IPC: 0.343582 cumulative IPC: 0.343582 (Simulation time: 0 hr 0 min 2 sec) 
+Heartbeat CPU 0 instructions: 3000001 cycles: 6247710 heartbeat IPC: 0.342833 cumulative IPC: 0.343207 (Simulation time: 0 hr 0 min 4 sec) 
+Heartbeat CPU 0 instructions: 4000000 cycles: 9161752 heartbeat IPC: 0.343166 cumulative IPC: 0.343193 (Simulation time: 0 hr 0 min 6 sec) 
+Heartbeat CPU 0 instructions: 5000001 cycles: 12075152 heartbeat IPC: 0.343242 cumulative IPC: 0.343205 (Simulation time: 0 hr 0 min 8 sec) 
+Heartbeat CPU 0 instructions: 6000001 cycles: 14990835 heartbeat IPC: 0.342973 cumulative IPC: 0.343159 (Simulation time: 0 hr 0 min 10 sec) 
+Heartbeat CPU 0 instructions: 7000000 cycles: 17856464 heartbeat IPC: 0.348963 cumulative IPC: 0.344113 (Simulation time: 0 hr 0 min 12 sec) 
+Heartbeat CPU 0 instructions: 8000000 cycles: 20476273 heartbeat IPC: 0.381707 cumulative IPC: 0.349024 (Simulation time: 0 hr 0 min 14 sec) 
+Heartbeat CPU 0 instructions: 9000001 cycles: 22723024 heartbeat IPC: 0.445088 cumulative IPC: 0.358701 (Simulation time: 0 hr 0 min 15 sec) 
 *** Reached end of trace for Core: 0 Repeating trace: ./trace/libquantum_10M.trace.gz
-Heartbeat CPU 0 instructions: 10000000 cycles: 25533699 heartbeat IPC: 0.437764 cumulative IPC: 0.358375 (Simulation time: 0 hr 0 min 20 sec) 
-Heartbeat CPU 0 instructions: 11000001 cycles: 28028625 heartbeat IPC: 0.400814 cumulative IPC: 0.36221 (Simulation time: 0 hr 0 min 22 sec) 
-Finished CPU 0 instructions: 10000000 cycles: 27608298 cummulative IPC: 0.36221 (Simulation time: 0 hr 0 min 22 sec) 
+Heartbeat CPU 0 instructions: 10000000 cycles: 24927918 heartbeat IPC: 0.453536 cumulative IPC: 0.367233 (Simulation time: 0 hr 0 min 17 sec) 
+Heartbeat CPU 0 instructions: 11000001 cycles: 27266325 heartbeat IPC: 0.427642 cumulative IPC: 0.372495 (Simulation time: 0 hr 0 min 19 sec) 
+Finished CPU 0 instructions: 10000000 cycles: 26845998 cummulative IPC: 0.372495 (Simulation time: 0 hr 0 min 19 sec) 
 
 ChampSim completed all CPUs
 
 Region of Interest Statistics
 
-CPU 0 cummulative IPC: 0.36221 instructions: 10000000 cycles: 27608298
-LLC TOTAL     ACCESS:     770071  HIT:     239638  MISS:     530433
+CPU 0 cummulative IPC: 0.372495 instructions: 10000000 cycles: 26845998
+LLC TOTAL     ACCESS:     770071  HIT:     344786  MISS:     425285
 LLC LOAD      ACCESS:     425280  HIT:          0  MISS:     425280
 LLC RFO       ACCESS:          5  HIT:          0  MISS:          5
 LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-LLC WRITEBACK ACCESS:     344786  HIT:     239638  MISS:     105148
+LLC WRITEBACK ACCESS:     344786  HIT:     344786  MISS:          0

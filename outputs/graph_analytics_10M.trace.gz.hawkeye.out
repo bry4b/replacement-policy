@@ -11,3 +11,67 @@ Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/graph_analytics_10M.trace.gz
 Initialize Hawkeye replacement policy state
+Finished initializing Hawkeye replacement policy state
+Heartbeat CPU 0 instructions: 1000002 cycles: 547201 heartbeat IPC: 1.82749 cumulative IPC: 1.82749 (Simulation time: 0 hr 0 min 2 sec) 
+OPTGen Hits: 533
+OPTGen Access: 631
+OPTGEN Hit Rate: 84.4691
+
+Warmup complete CPU 0 instructions: 1000002 cycles: 547201 (Simulation time: 0 hr 0 min 2 sec) 
+
+Heartbeat CPU 0 instructions: 2000001 cycles: 2713939 heartbeat IPC: 0.461523 cumulative IPC: 0.461523 (Simulation time: 0 hr 0 min 4 sec) 
+OPTGen Hits: 1957
+OPTGen Access: 3185
+OPTGEN Hit Rate: 61.4443
+Heartbeat CPU 0 instructions: 3000002 cycles: 7718968 heartbeat IPC: 0.199799 cumulative IPC: 0.278871 (Simulation time: 0 hr 0 min 6 sec) 
+OPTGen Hits: 6296
+OPTGen Access: 16039
+OPTGEN Hit Rate: 39.2543
+Heartbeat CPU 0 instructions: 4000000 cycles: 12767553 heartbeat IPC: 0.198075 cumulative IPC: 0.245492 (Simulation time: 0 hr 0 min 9 sec) 
+OPTGen Hits: 10190
+OPTGen Access: 28722
+OPTGEN Hit Rate: 35.478
+Heartbeat CPU 0 instructions: 5000000 cycles: 18043049 heartbeat IPC: 0.189556 cumulative IPC: 0.228626 (Simulation time: 0 hr 0 min 11 sec) 
+OPTGen Hits: 13677
+OPTGen Access: 42157
+OPTGEN Hit Rate: 32.443
+Heartbeat CPU 0 instructions: 6000001 cycles: 22966785 heartbeat IPC: 0.203098 cumulative IPC: 0.223019 (Simulation time: 0 hr 0 min 13 sec) 
+OPTGen Hits: 17325
+OPTGen Access: 54418
+OPTGEN Hit Rate: 31.8369
+Heartbeat CPU 0 instructions: 7000001 cycles: 28152390 heartbeat IPC: 0.192842 cumulative IPC: 0.21735 (Simulation time: 0 hr 0 min 16 sec) 
+OPTGen Hits: 20913
+OPTGen Access: 67489
+OPTGEN Hit Rate: 30.9873
+Heartbeat CPU 0 instructions: 8000000 cycles: 33433238 heartbeat IPC: 0.189363 cumulative IPC: 0.212856 (Simulation time: 0 hr 0 min 18 sec) 
+OPTGen Hits: 24565
+OPTGen Access: 80760
+OPTGEN Hit Rate: 30.4173
+Heartbeat CPU 0 instructions: 9000002 cycles: 38393552 heartbeat IPC: 0.201601 cumulative IPC: 0.211381 (Simulation time: 0 hr 0 min 21 sec) 
+OPTGen Hits: 28193
+OPTGen Access: 92965
+OPTGEN Hit Rate: 30.3265
+*** Reached end of trace for Core: 0 Repeating trace: ./trace/graph_analytics_10M.trace.gz
+Heartbeat CPU 0 instructions: 10000003 cycles: 43296529 heartbeat IPC: 0.203958 cumulative IPC: 0.21053 (Simulation time: 0 hr 0 min 23 sec) 
+OPTGen Hits: 31981
+OPTGen Access: 104993
+OPTGEN Hit Rate: 30.4601
+Heartbeat CPU 0 instructions: 11000002 cycles: 45346278 heartbeat IPC: 0.487864 cumulative IPC: 0.223219 (Simulation time: 0 hr 0 min 25 sec) 
+OPTGen Hits: 32411
+OPTGen Access: 105476
+OPTGEN Hit Rate: 30.7283
+Finished CPU 0 instructions: 10000000 cycles: 44799077 cummulative IPC: 0.223219 (Simulation time: 0 hr 0 min 25 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cummulative IPC: 0.223219 instructions: 10000000 cycles: 44799077
+LLC TOTAL     ACCESS:     142547  HIT:      21872  MISS:     120675
+LLC LOAD      ACCESS:     103876  HIT:       4703  MISS:      99173
+LLC RFO       ACCESS:        969  HIT:         71  MISS:        898
+LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+LLC WRITEBACK ACCESS:      37702  HIT:      17098  MISS:      20604
+Final OPTGen Hits: 32411
+Final OPTGen Access: 105476
+Final OPTGEN Hit Rate: 30.7283
