@@ -85,11 +85,12 @@ void UpdateReplacementState(uint32_t cpu, uint32_t set, uint32_t way, uint64_t p
 
     // Insert with RRPV based on SHCT[signature]
     if (SHCT[sig_idx] == 0)
-        rrpv[set][way] = RRPV_MAX;         // Insert at LRU (low reuse confidence)
-    else
-        rrpv[set][way] = RRPV_MAX - 1;     // Insert with slight priority
+        rrpv[set][way] = RRPV_MAX;       // Insert at LRU (low reuse confidence)
+    else if (SHCT[sig_idx] < 2)
+        rrpv[set][way] = RRPV_MAX-2;     // Insert at second LRU
+    else 
+        rrpv[set][way] = RRPV_MAX-3;     // Insert at MRU
 }
 
-// Optional stats hooks
 void PrintStats_Heartbeat() {}
 void PrintStats() {}

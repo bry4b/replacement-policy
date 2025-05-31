@@ -26,18 +26,15 @@ run-all-%:
 		echo "Running $$traces with $* policy..."; \
 		./build/$* -warmup_instructions 1000000 -simulation_instructions 10000000 -traces ./trace/$$traces > ./outputs/$$traces.$*.out; \
 	done
+	$(MAKE) calc-missrate-$*
 
-	@echo "Calculating miss rate for policy: $*"
+calc-old-missrate-%: 
+	@echo "Calculating old miss rate for policy: $*"
 	@awk '/LLC TOTAL/ { total_access += $$4; total_miss += $$8 } END { if (total_access > 0) print "Average Miss Rate:", total_miss / total_access }' ./outputs/*.$*.out
-	$(MAKE) calc-new-missrate-$*
 
 calc-missrate-%: 
 	@echo "Calculating miss rate for policy: $*"
-	@awk '/LLC TOTAL/ { total_access += $$4; total_miss += $$8 } END { if (total_access > 0) print "Average Miss Rate:", total_miss / total_access }' ./outputs/*.$*.out
-
-calc-new-missrate-%: 
-	@echo "Calculating new miss rate for policy: $*"
-	@awk '/LLC TOTAL/ { total_mr += $$8/$$4 } END { print "New Average Miss Rate:", total_mr / 4 }' ./outputs/*.$*.out
+	@awk '/LLC TOTAL/ { total_mr += $$8/$$4 } END { print "Average Miss Rate:", total_mr / 4 }' ./outputs/*.$*.out
 
 clean:
 	rm -f build *.o
