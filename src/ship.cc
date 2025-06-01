@@ -6,8 +6,8 @@
 #define LLC_WAYS 16
 
 #define RRPV_MAX 3
-#define SHCT_SIZE 16384  // Can be tuned
-#define SHCT_COUNTER_MAX 7
+#define SHCT_SIZE 2048  // Can be tuned // 16384 gives 0.508684
+#define SHCT_COUNTER_MAX 511
 
 // RRIP counters
 uint8_t rrpv[LLC_SETS][LLC_WAYS];
@@ -15,11 +15,14 @@ uint8_t rrpv[LLC_SETS][LLC_WAYS];
 // SHiP state
 uint16_t signature[LLC_SETS][LLC_WAYS]; // PC signatures per block
 bool reused[LLC_SETS][LLC_WAYS];        // Was the block reused?
-uint8_t SHCT[SHCT_SIZE];                // Signature history counter table
+uint16_t SHCT[SHCT_SIZE];                // Signature history counter table
 
 // Utility: hash PC into SHCT index
-inline uint32_t get_signature_index(uint64_t PC) {
-    return PC % SHCT_SIZE;
+uint32_t get_signature_index(uint64_t PC) {
+    uint32_t hash = (uint32_t)(PC ^ (PC >> 32));
+    hash ^= (hash >> 16);
+    hash ^= (hash >> 8);
+    return hash & (SHCT_SIZE - 1);
 }
 
 // Init state
@@ -35,7 +38,7 @@ void InitReplacementState() {
     }
 
     for (int i = 0; i < SHCT_SIZE; i++) {
-        SHCT[i] = SHCT_COUNTER_MAX / 2; // Start at midpoint
+        SHCT[i] = SHCT_COUNTER_MAX; // Start at midpoint
     }
 }
 
@@ -73,10 +76,13 @@ void UpdateReplacementState(uint32_t cpu, uint32_t set, uint32_t way, uint64_t p
         uint32_t old_sig = signature[set][way];
         if (SHCT[old_sig] > 0)
             SHCT[old_sig]--;
+        // else std::cerr << "SHCT underflow: " << old_sig << std::endl;
     } else {
         uint32_t old_sig = signature[set][way];
         if (SHCT[old_sig] < SHCT_COUNTER_MAX)
             SHCT[old_sig]++;
+        // else std::cerr << "SHCT overflow: " << old_sig << std::endl;
+
     }
 
     // Reset metadata for the new block
@@ -84,13 +90,16 @@ void UpdateReplacementState(uint32_t cpu, uint32_t set, uint32_t way, uint64_t p
     reused[set][way] = false;
 
     // Insert with RRPV based on SHCT[signature]
-    if (SHCT[sig_idx] == 0)
+    if (SHCT[sig_idx] <= 0)
         rrpv[set][way] = RRPV_MAX;       // Insert at LRU (low reuse confidence)
-    else if (SHCT[sig_idx] < 2)
-        rrpv[set][way] = RRPV_MAX-2;     // Insert at second LRU
+    // else if (SHCT[sig_idx] <= 3)
+    //     rrpv[set][way] = RRPV_MAX-2;   // Insert at second LRU
+    // else if (SHCT[sig_idx] <= 5)
+    //     rrpv[set][way] = RRPV_MAX-2;   // Insert at third LRU
     else 
-        rrpv[set][way] = RRPV_MAX-3;     // Insert at MRU
+        rrpv[set][way] = 0;     // Insert at MRU
 }
 
 void PrintStats_Heartbeat() {}
+
 void PrintStats() {}

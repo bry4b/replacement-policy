@@ -17,3 +17,24 @@ Warmup complete CPU 0 instructions: 1000002 cycles: 454321 (Simulation time: 0 h
 
 Heartbeat CPU 0 instructions: 2000001 cycles: 2190053 heartbeat IPC: 0.576125 cumulative IPC: 0.576125 (Simulation time: 0 hr 0 min 3 sec) 
 Heartbeat CPU 0 instructions: 3000002 cycles: 3968175 heartbeat IPC: 0.562392 cumulative IPC: 0.569176 (Simulation time: 0 hr 0 min 5 sec) 
+Heartbeat CPU 0 instructions: 4000000 cycles: 5248847 heartbeat IPC: 0.780838 cumulative IPC: 0.625713 (Simulation time: 0 hr 0 min 6 sec) 
+Heartbeat CPU 0 instructions: 5000002 cycles: 6374903 heartbeat IPC: 0.888057 cumulative IPC: 0.675609 (Simulation time: 0 hr 0 min 8 sec) 
+Heartbeat CPU 0 instructions: 6000002 cycles: 7330438 heartbeat IPC: 1.04653 cumulative IPC: 0.727155 (Simulation time: 0 hr 0 min 10 sec) 
+Heartbeat CPU 0 instructions: 7000000 cycles: 8182206 heartbeat IPC: 1.17403 cumulative IPC: 0.776409 (Simulation time: 0 hr 0 min 11 sec) 
+Heartbeat CPU 0 instructions: 8000000 cycles: 9603028 heartbeat IPC: 0.703818 cumulative IPC: 0.765135 (Simulation time: 0 hr 0 min 13 sec) 
+Heartbeat CPU 0 instructions: 9000002 cycles: 10942311 heartbeat IPC: 0.74667 cumulative IPC: 0.762777 (Simulation time: 0 hr 0 min 14 sec) 
+*** Reached end of trace for Core: 0 Repeating trace: ./trace/bzip2_10M.trace.gz
+Heartbeat CPU 0 instructions: 10000001 cycles: 12520246 heartbeat IPC: 0.633739 cumulative IPC: 0.745902 (Simulation time: 0 hr 0 min 16 sec) 
+Heartbeat CPU 0 instructions: 11000002 cycles: 13928463 heartbeat IPC: 0.710119 cumulative IPC: 0.742162 (Simulation time: 0 hr 0 min 17 sec) 
+Finished CPU 0 instructions: 10000000 cycles: 13474142 cummulative IPC: 0.742162 (Simulation time: 0 hr 0 min 17 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cummulative IPC: 0.742162 instructions: 10000000 cycles: 13474142
+LLC TOTAL     ACCESS:     104771  HIT:      84542  MISS:      20229
+LLC LOAD      ACCESS:      66109  HIT:      56175  MISS:       9934
+LLC RFO       ACCESS:      16745  HIT:       6451  MISS:      10294
+LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+LLC WRITEBACK ACCESS:      21917  HIT:      21916  MISS:          1

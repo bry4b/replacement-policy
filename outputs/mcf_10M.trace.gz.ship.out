@@ -11,30 +11,30 @@ Off-chip DRAM Channels: 1 Width: 64-bit Data Rate: 1600 MT/s
 
 CPU 0 runs ./trace/mcf_10M.trace.gz
 Initialize SHiP Replacement State
-Heartbeat CPU 0 instructions: 1000003 cycles: 495961 heartbeat IPC: 2.01629 cumulative IPC: 2.01629 (Simulation time: 0 hr 0 min 1 sec) 
+Heartbeat CPU 0 instructions: 1000003 cycles: 496043 heartbeat IPC: 2.01596 cumulative IPC: 2.01596 (Simulation time: 0 hr 0 min 1 sec) 
 
-Warmup complete CPU 0 instructions: 1000003 cycles: 495961 (Simulation time: 0 hr 0 min 1 sec) 
+Warmup complete CPU 0 instructions: 1000003 cycles: 496043 (Simulation time: 0 hr 0 min 1 sec) 
 
-Heartbeat CPU 0 instructions: 2000002 cycles: 14283186 heartbeat IPC: 0.0725308 cumulative IPC: 0.0725308 (Simulation time: 0 hr 0 min 5 sec) 
-Heartbeat CPU 0 instructions: 3000000 cycles: 20581759 heartbeat IPC: 0.158766 cumulative IPC: 0.0995727 (Simulation time: 0 hr 0 min 7 sec) 
-Heartbeat CPU 0 instructions: 4000000 cycles: 26857623 heartbeat IPC: 0.159341 cumulative IPC: 0.113802 (Simulation time: 0 hr 0 min 9 sec) 
-Heartbeat CPU 0 instructions: 5000001 cycles: 44102806 heartbeat IPC: 0.0579873 cumulative IPC: 0.0917287 (Simulation time: 0 hr 0 min 13 sec) 
-Heartbeat CPU 0 instructions: 6000002 cycles: 50973314 heartbeat IPC: 0.14555 cumulative IPC: 0.0990543 (Simulation time: 0 hr 0 min 15 sec) 
-Heartbeat CPU 0 instructions: 7000000 cycles: 57034112 heartbeat IPC: 0.164994 cumulative IPC: 0.106123 (Simulation time: 0 hr 0 min 17 sec) 
-Heartbeat CPU 0 instructions: 8000000 cycles: 67468705 heartbeat IPC: 0.0958351 cumulative IPC: 0.10452 (Simulation time: 0 hr 0 min 18 sec) 
-Heartbeat CPU 0 instructions: 9000002 cycles: 80626944 heartbeat IPC: 0.0759982 cumulative IPC: 0.0998365 (Simulation time: 0 hr 0 min 21 sec) 
+Heartbeat CPU 0 instructions: 2000002 cycles: 14276782 heartbeat IPC: 0.072565 cumulative IPC: 0.072565 (Simulation time: 0 hr 0 min 5 sec) 
+Heartbeat CPU 0 instructions: 3000000 cycles: 20478676 heartbeat IPC: 0.161241 cumulative IPC: 0.100087 (Simulation time: 0 hr 0 min 7 sec) 
+Heartbeat CPU 0 instructions: 4000000 cycles: 26436881 heartbeat IPC: 0.167836 cumulative IPC: 0.115648 (Simulation time: 0 hr 0 min 9 sec) 
+Heartbeat CPU 0 instructions: 5000001 cycles: 43482018 heartbeat IPC: 0.0586678 cumulative IPC: 0.0930536 (Simulation time: 0 hr 0 min 13 sec) 
+Heartbeat CPU 0 instructions: 6000002 cycles: 50335883 heartbeat IPC: 0.145903 cumulative IPC: 0.100321 (Simulation time: 0 hr 0 min 15 sec) 
+Heartbeat CPU 0 instructions: 7000000 cycles: 56161955 heartbeat IPC: 0.171642 cumulative IPC: 0.107786 (Simulation time: 0 hr 0 min 17 sec) 
+Heartbeat CPU 0 instructions: 8000000 cycles: 66123836 heartbeat IPC: 0.100383 cumulative IPC: 0.106662 (Simulation time: 0 hr 0 min 20 sec) 
+Heartbeat CPU 0 instructions: 9000002 cycles: 79209674 heartbeat IPC: 0.0764186 cumulative IPC: 0.101634 (Simulation time: 0 hr 0 min 23 sec) 
 *** Reached end of trace for Core: 0 Repeating trace: ./trace/mcf_10M.trace.gz
-Heartbeat CPU 0 instructions: 10000001 cycles: 86421877 heartbeat IPC: 0.172564 cumulative IPC: 0.104741 (Simulation time: 0 hr 0 min 24 sec) 
-Heartbeat CPU 0 instructions: 11000003 cycles: 96418067 heartbeat IPC: 0.100038 cumulative IPC: 0.104251 (Simulation time: 0 hr 0 min 26 sec) 
-Finished CPU 0 instructions: 10000000 cycles: 95922106 cummulative IPC: 0.104251 (Simulation time: 0 hr 0 min 26 sec) 
+Heartbeat CPU 0 instructions: 10000001 cycles: 85003778 heartbeat IPC: 0.172589 cumulative IPC: 0.106499 (Simulation time: 0 hr 0 min 25 sec) 
+Heartbeat CPU 0 instructions: 11000003 cycles: 94920249 heartbeat IPC: 0.100843 cumulative IPC: 0.105905 (Simulation time: 0 hr 0 min 28 sec) 
+Finished CPU 0 instructions: 10000000 cycles: 94424206 cummulative IPC: 0.105905 (Simulation time: 0 hr 0 min 28 sec) 
 
 ChampSim completed all CPUs
 
 Region of Interest Statistics
 
-CPU 0 cummulative IPC: 0.104251 instructions: 10000000 cycles: 95922106
-LLC TOTAL     ACCESS:    1017548  HIT:     405192  MISS:     612356
-LLC LOAD      ACCESS:     819887  HIT:     224290  MISS:     595597
-LLC RFO       ACCESS:      18332  HIT:       4613  MISS:      13719
+CPU 0 cummulative IPC: 0.105905 instructions: 10000000 cycles: 94424206
+LLC TOTAL     ACCESS:    1017547  HIT:     422502  MISS:     595045
+LLC LOAD      ACCESS:     819891  HIT:     240902  MISS:     578989
+LLC RFO       ACCESS:      18325  HIT:       5204  MISS:      13121
 LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-LLC WRITEBACK ACCESS:     179329  HIT:     176289  MISS:       3040
+LLC WRITEBACK ACCESS:     179331  HIT:     176396  MISS:       2935
